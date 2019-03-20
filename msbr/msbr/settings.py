@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import os
 # Scrapy settings for msbr project
 #
 # For simplicity, this file contains only settings considered important or
@@ -64,10 +64,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'msbr.pipelines.MsbrPipeline': 300,
-#}
-
+ITEM_PIPELINES = {
+   'msbr.pipelines.MsbrPipeline': 300,
+}
+DBPATH = os.path.expanduser('./demo.db')
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

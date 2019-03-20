@@ -63,3 +63,15 @@ add = list2[0].xpath(".//div[@class='product']//div[@class='price']/text()").ext
 
 
 
+scrapy shell "https://mr-bricolage.bg/bg/Instrumenti/Avto-i-veloaksesoari/Veloaksesoari/STOP-LED-ChERVENA-VELO-B/p/990967"
+
+a = response.xpath("//div[@class='tab-pane active']") /// harakteristiki
+
+
+ table = a.xpath("//table[@class='table']//tr//td")
+
+  table[0].xpath('.//text()').extract()[0]
+
+
+
+

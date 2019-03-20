@@ -11,4 +11,8 @@ import scrapy
 class MsbrItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    product_name = scrapy.Field()
+    product_price = scrapy.Field()
+    product_link = scrapy.Field()
+    image = scrapy.Field()
+    type = scrapy.Field()
