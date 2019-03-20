@@ -11,7 +11,7 @@ class QuotesSpider(scrapy.Spider):
     def parse(self, response):
         products=response.xpath("//div[@class='col-md-4 mg-bottom-30 product-item']")
         # iterating over search results
-        print('product parse bef for')
+        print('product parse bef for') 
         print(products)
         for product in products:
             # Defining the XPaths           
